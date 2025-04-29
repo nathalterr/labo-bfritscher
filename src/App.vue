@@ -2,7 +2,7 @@
     <div class="container">
         <h1>Donations</h1>
         <input v-model.number="amount" type="number" />
-        <button v-on:click="addAmount" v-bind:disabled="amount <= 0">add</button>
+        <button v-on:click="addAmount()" v-bind:disabled="amount <= 0">add</button>
         <p v-if="amount != '' && amount <= 0" class="bg-danger text-white mt-3 p-2">Attention...</p>
         <ul>
             <li v-for="(d, index) in donations" v-bind:key="index">
