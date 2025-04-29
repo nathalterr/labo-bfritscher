@@ -10,7 +10,7 @@ export default defineConfig({
     base: process.env.NODE_ENV === "production" ? "/labo-nathalterr/" : "/",
     resolve: {
         alias: {
-            "@": fileURLToPath(new URL("https://github.com/heg-web/labo-nathalterr.git", import.meta.url))
+            "@": fileURLToPath(new URL("./src", import.meta.url))
         }
     }
 });
